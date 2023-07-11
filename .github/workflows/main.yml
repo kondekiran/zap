@@ -10,7 +10,7 @@ jobs:
         with:
           ref: main
       - name: ZAP Scan
-        uses: zaproxy/action-full-scan@v0.5.1
+        uses: zaproxy/action-quick-scan@v0.5.1
         with:
           target: 'https://forum.camunda.io/t/turn-on-basic-http-authentication-for-rest-api-in-spring-boot/3431'
           rules_file_name: '.zap/rules.tsv'
