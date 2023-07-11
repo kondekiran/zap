@@ -13,6 +13,6 @@ jobs:
         uses: zaproxy/action-full-scan@v0.5.1
         with:
           docker_name: 'owasp/zap2docker-stable'
-          target: 'http://prometheusfrontend-staging.us-west-2.elasticbeanstalk.com/'
+          target: 'http://localhost:5187/bookstore?bookid=65&isloggedin=true'
           rules_file_name: '.zap/rules.tsv'
           cmd_options: '-a'
